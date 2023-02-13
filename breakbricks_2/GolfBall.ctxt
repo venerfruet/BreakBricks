@@ -1,0 +1,21 @@
+#BlueJ class context
+comment0.target=GolfBall
+comment0.text=\r\n\ Bola\ de\ golfe\ que\ fica\ quicando\ na\ cena,\ \u00E9\ controlada\r\n\ indiretamente\ pelo\ jogador\ atrav\u00E9s\ da\ Barra\ Bloqueadora.\r\n\ \r\n\ @author\ (Vener\ Fruet\ daSilveira)\ \r\n\ @version\ (2023-02-13)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=
+comment2.target=greenfoot.Actor\ getBlocker()
+comment2.text=\r\n\ getBlocker\ -\ retorna\ o\ objeto\ Barra\ Bloqueadora.\r\n
+comment3.params=
+comment3.target=int\ getTouchInBlocker()
+comment3.text=\r\n\ getTouchInBlocker\ -\ Retorna\ a\ posi\u00E7\u00E3o\ no\ eixo\ X\ em\ que\ a\ Barra\ Bloqueadora\ se\ encotra.\r\n
+comment4.params=
+comment4.target=void\ defineSpeedAndDirectionX()
+comment4.text=\r\n\ defineSpeedAndDirectionX\ -\ Define\ a\ velocida\ entre\ 1,\ 3,\ 5\ e\ 10\ no\ eixo\ X\r\n\ de\ acordo\ com\ a\ posi\u00E7\u00E3o\ da\ colis\u00E3o\ na\ Barra\ Bloqueadora.\ E\ inverte\ a\ dire\u00E7\u00E3o\r\n\ no\ eixo\ X\ caso\ colida\ em\ uma\ das\ pontas\ da\ Barra\ Bloqueadora.\r\n
+comment5.params=
+comment5.target=void\ removeBrick()
+comment5.text=\r\n\ removeBrick\ -\ Remove\ tijolo\ colidido\r\n
+comment6.params=object
+comment6.target=int[]\ getBoundingBox(greenfoot.Actor)
+comment6.text=\r\n\ getBoundingBox(Actor\ object)\ -\ Retorna\ uma\ matriz\ com\ as\ coordenas\ da\ caixa\ de\ um\ objeto\ de\ classe\ Ator.\r\n\ <br>\r\n\ indices\:\r\n\ <br>\r\n\ 0\ \=\ eixo\ X\ a\ direita\r\n\ 1\ \=\ eixo\ X\ a\ esquerda\r\n\ 2\ \=\ eixo\ Y\ a\ cima\r\n\ 3\ \=\ eixo\ Y\ a\ baixo\r\n
+numComments=7

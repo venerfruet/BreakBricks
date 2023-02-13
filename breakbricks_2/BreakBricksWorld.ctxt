@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=BreakBricksWorld
+comment0.text=\r\n\ This\ is\ class\ world\ of\ game,\ where\ the\ cene\ objects\ are\ included.\r\n\ <br>\r\n\ Esta\ \u00E9\ a\ classe\ mundo\ do\ jogo,\ onde\ s\u00E3o\ inclu\u00EDdos\ os\ objetos\ da\ cena.\r\n\ \r\n\ @author\ (Vener\ Fruet\ daSilveira)\ \r\n\ @version\ (2023-02-10)\r\n
+comment1.params=
+comment1.target=BreakBricksWorld()
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ BreakBricksWorld<br>\r\n\ Create\ a\ new\ world\ with\ 600x400\ cells\ with\ a\ cell\ size\ of\ 1x1\ pixels<br>\r\n\ <br>\r\n\ Construtor\ de\ Objetos\ da\ classe\ BreakBricksWorld<br>\r\n\ Cria\ um\ novo\ mundo\ com\ 600x400\ c\u00E9lulas\ onde\ uma\ celula\ tem\ 1x1\ pixels\ de\ tamanhanho.\r\n
+comment2.params=
+comment2.target=void\ prepare()
+comment2.text=\r\n\ Prepare\ the\ world\ for\ the\ start\ of\ the\ program.\r\n\ Prepara\ o\ mundo\ para\ o\ in\u00EDcio\ do\ programa.\r\n\ That\ is\:\ create\ the\ initial\ objects\ and\ add\ them\ to\ the\ world.\r\n\ Para\ isto\:\ s\u00E3o\ criados\ os\ objetos\ iniciais\ e\ adicionados\ ao\ mundo.\r\n
+comment3.params=
+comment3.target=greenfoot.Actor[][]\ Level001()
+comment4.params=
+comment4.target=greenfoot.Actor[][]\ Level002()
+numComments=5

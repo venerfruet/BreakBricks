@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Blocker
+comment0.text=\r\n\ Barra\ Boqueadora,\ controlada\ diretamente\ pelo\ jogador\r\n\ \u00E9\ ela\ \u00E9\ quem\ n\u00E3o\ deixa\ a\ bola\ cair.\r\n\ \r\n\ @author\ (Vener\ Fruet\ daSilveira)\ \r\n\ @version\ (2023-02-13)\r\n
+comment1.params=
+comment1.target=void\ act()
+comment2.params=dirX\ dirY
+comment2.target=void\ moveBlocker(int,\ int)
+comment2.text=\r\n\ moveBlocker\ -\ Move\ a\ Barra\ Bloqueadora\ nos\ nos\ eixos\ X\ e\ Y\r\n
+numComments=3
