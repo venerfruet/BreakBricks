@@ -69,40 +69,51 @@ public class GolfBall extends Actor
     }
     
     /**
-     * defineSpeedAndDirectionX - Define a velocida entre 1, 3, 5 e 10 no eixo X
+     * defineSpeedAndDirectionX - Define a velocida entre 1, 3, 5 e 7 no eixo X
      * de acordo com a posição da colisão na Barra Bloqueadora. E inverte a direção
-     * no eixo X caso colida em uma das pontas da Barra Bloqueadora.
+     * no eixo X caso colida em uma das quinas da Barra Bloqueadora.
      */
     private void defineSpeedAndDirectionX()
     {
+        //primeiro verifica se a barra bloqueadora foi tocada
         if(isTouching(Blocker.class)){
-            int blockerWidth=getBlocker().getImage().getWidth();
-            int xBlocker=getTouchInBlocker();
-            int posX=getX();
-            int colisao=xBlocker-posX;
+            
+            // retorna largura da barra
+            int blockerWidth = getBlocker().getImage().getWidth();
+            
+            //retorna coordenada X da barra
+            int xBlocker = getTouchInBlocker();
+            
+            //retorna coordenada X da bola
+            int posX = getX();
+            
+            //retorna coordenada X da colisão
+            int colisao = xBlocker - posX;
             
             /*
-            define a velecidade entre 1, 3, 5 e 10 em X de acordo
-            com a posição da colisão na barra bloqueadora
+            caso bata no meio da barra numa área de 10% do tamanho da barra
+            o deslocamento em X muda para 1
             */
             if(colisao <= blockerWidth * 0.05 && colisao >= blockerWidth * 0.05 * -1)
             {
                 speedX=1;
+            //caso bata no meio da barra numa área de 20% do tamanho da barra
+            //o deslocamento em X muda para 3
             }else if(colisao <= blockerWidth * 0.1 && colisao >= blockerWidth * 0.1 * -1)
             {
                 speedX=3;
+            //caso bata no meio da barra numa área de 30% do tamanho da barra
+            //o deslocamento em X muda para 5
             }else if(colisao <= blockerWidth * 0.15 && colisao >= blockerWidth * 0.15 -1)
             {
                 speedX=5;
+            //caso seja maior que 30% o deslocamento em X muda para 7
             }else
             {
                 speedX=7;
             }
-            /*
-            define a direção em X de acordo com a ponta
-            da barra bloqueadora em que a bola colide
-            */
-           
+            
+            //faz a bola voltar de onde veio caso bata em uma das quinas da barra bloqueadora
             if(colisao >= blockerWidth / 2)
             {
                 if(dirX>0)
@@ -116,7 +127,9 @@ public class GolfBall extends Actor
                     dirX *= -1;
                 }
             }
-            speedY *= -1;
+            
+            //altera a direção no eixo Y sempre que toca na barra bloqueadora
+            dirY *= -1;
         }
     }
     

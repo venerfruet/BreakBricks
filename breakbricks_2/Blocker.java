@@ -17,7 +17,7 @@ public class Blocker extends Actor
     private int posX=0;
     private int posY=0;
     private int speed=7;
-    
+
     public void act()
     {
         //Determina o máximo que a Barra Bloqueadora se move na vertical
@@ -26,38 +26,38 @@ public class Blocker extends Actor
         int minY=(int)limitToUpWordHeight;
         int minX=53;
         int maxX=543;
-        
+
         posX=getX();
         posY=getY();
-        
+
         if(Greenfoot.isKeyDown("right"))
         {
             posX += speed;
             if(posX>maxX)
                 posX=getX();
-                
+
         }else if(Greenfoot.isKeyDown("left"))
         {
             posX -= speed;
             if(posX<minX)
                 posX=getX();
-                
+
         }else if(Greenfoot.isKeyDown("up"))
         {
             posY -= speed;
             if(posY<minY)
                 posY=getY();
-                
+
         }else if(Greenfoot.isKeyDown("down"))
         {
             posY += speed;
             if(posY>maxY)
                 posY=getY();
-                
+
         }
-        
+
         moveBlocker(posX, posY);
-        
+
     }
 
     /**
